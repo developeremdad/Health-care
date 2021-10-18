@@ -3,11 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './posts/Home/Home';
 import NotFound from './posts/NotFound/NotFound';
+import DetailsService from './posts/Home/DetailsService/DetailsService';
+import Header from './posts/Shared/Header/Header';
 
 function App() {
   return (
     <>
       <Router>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
             <Home></Home>
@@ -15,6 +18,10 @@ function App() {
 
           <Route path="/home">
             <Home></Home>
+          </Route>
+
+          <Route path="/details">
+            <DetailsService></DetailsService>
           </Route>
 
           <Route path="*">

@@ -2,14 +2,18 @@
     font-size: 1.7rem;
     color: #7b5f43;
 }
-.card-description-custom{
-    line-height: 1.7rem;
-    /* text-align: ; */
-    letter-spacing: .05rem;
-}
 .divider{
     border: 1px solid black;
     width: 40%;
+}
+.card-description-custom{
+    line-height: 1.7rem;
+    letter-spacing: .05rem;
+}
+.read-more-custom{
+    color: #7b5f43;
+    font-weight: bold;
+    cursor: pointer;
 }
 .card-custom-footer button{
     background-color: rgb(255, 255, 255);

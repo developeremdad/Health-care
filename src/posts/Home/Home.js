@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import useData from '../../Hooks/useData';
 import Footer from '../Shared/Footer/Footer';
-import Header from '../Shared/Header/Header';
-import Banner from './Banner/Banner';
+// import Banner from './Banner/Banner';
 import './Home.css';
 import Services from './Services/Services';
 
@@ -12,7 +11,6 @@ const Home = () => {
     // console.log(services);
     return (
         <div>
-            <Header></Header>
             {/* <Banner></Banner> */}
 
             {/* Treatment and Services section  */}
@@ -23,7 +21,7 @@ const Home = () => {
                 </div>
                 {/* service card */}
                 <Container>
-                    <Row xs={1} md={3} className="g-4">
+                    <Row xs={1} md={3} sm={2} className="g-4">
                         {
                             services?.map(service => <Services
                                 service={service}
