@@ -7,6 +7,7 @@ import DetailsService from './posts/Home/DetailsService/DetailsService';
 import Header from './posts/Shared/Header/Header';
 import Login from './posts/Login/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
+import PrivateRoute from './posts/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,9 +23,9 @@ function App() {
             <Home></Home>
           </Route>
 
-          <Route path="/details/:Id">
+          <PrivateRoute path="/details/:Id">
             <DetailsService></DetailsService>
-          </Route>
+          </PrivateRoute>
 
           <Route path="/login">
             <Login></Login>
