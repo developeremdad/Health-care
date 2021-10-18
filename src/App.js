@@ -20,7 +20,7 @@ function App() {
             <Home></Home>
           </Route>
 
-          <Route path="/details">
+          <Route path="/details/:Id">
             <DetailsService></DetailsService>
           </Route>
 
