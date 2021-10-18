@@ -1,0 +1,14 @@
+.services-heading{
+    margin: 60px 0;
+}
+
+.services-heading h6{
+    color: #7b5f43;
+    letter-spacing: .2rem;
+    font-size: 1.1rem;
+}
+.services-heading h1{
+    font-size: 3.5rem;
+    margin-top: 20px;
+    font-weight: 400;
+}

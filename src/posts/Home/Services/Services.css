@@ -1,0 +1,27 @@
+.card-title-custom{
+    font-size: 1.7rem;
+    color: #7b5f43;
+}
+.card-description-custom{
+    line-height: 1.7rem;
+    /* text-align: ; */
+    letter-spacing: .05rem;
+}
+.divider{
+    border: 1px solid black;
+    width: 40%;
+}
+.card-custom-footer button{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 2px solid #7b5f43;
+    color: #7b5f43;
+    font-weight: bold;
+    border-radius: 0 50px;
+    transition: .5s;
+}
+.card-custom-footer button:hover{
+    border-radius: 50px 0px;
+    background-color: #7b5f43;
+    color: white;
+}
