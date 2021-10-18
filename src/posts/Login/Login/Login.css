@@ -1,0 +1,28 @@
+body{
+    background-color: #ddd;
+}
+.form-container{
+    background-color: #4a304d;
+    border-radius: 10px;
+}
+.login-btn{
+    background-color: #634268;
+    border: none;
+    margin: 10px;
+    color: #ddd;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+.input-field-custom{
+    background-color: #3b263e;
+    color: #ddd;
+    border: none;
+}
+.check-box-custom{
+    color: #ffb37b;
+}
+.submit-btn{
+    background-color: #ffb37b;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
