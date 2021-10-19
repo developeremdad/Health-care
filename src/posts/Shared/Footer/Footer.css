@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.footer-container{
+    background-color: rgb(158, 152, 152);
+    padding: 50px 0;
+}
+.footer-icon{
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+.footer-icon:hover{
+    color: burlywood;
+    transition: .4s;
+}
+.footer-nav{
+    text-decoration: none;
+    transition: .4s;
+}
+.footer-nav:hover{
+    font-weight: bold;
+}

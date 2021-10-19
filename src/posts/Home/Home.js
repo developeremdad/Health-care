@@ -12,8 +12,7 @@ const Home = () => {
         <div>
             {/* <Banner></Banner> */}
 
-            {/* Treatment and Services section  */}
-            <div>
+            <div className="mb-5">
                 <div className="services-heading text-center">
                     <h6>HEALTHY SKIN AND NATURAL</h6>
                     <h1>Treatments & Services</h1>
@@ -30,7 +29,6 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
-            {/* <Services></Services> */}
         </div>
     );
 };
