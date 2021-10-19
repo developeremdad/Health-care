@@ -9,7 +9,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [isToggle, setIsToggle] = useState(false);
     // handle firebase auth 
-    const { signInWithGoogle, handleSubmitForm, handleLoginForm, setUser, error, setError } = useAuth();
+    const { signInWithGoogle, handleSubmitForm, handleLoginForm, setUser, setError } = useAuth();
     // console.log(error);
 
     const location = useLocation();
@@ -66,11 +66,11 @@ const Login = () => {
     }
     return (
 
-        <div className="mx-auto border p-5 form-container mt-2">
+        <div className="mx-auto border p-5 form-container mt-3">
             <div className="text-center text-white">
                 <h4 className="mb-2">Log in with</h4>
-                <button onClick={handleButtonClick} className="login-btn">Google</button>
-                <button className="login-btn">Git Hub</button>
+                <button onClick={handleButtonClick} className="login-btn"><span><i class="fab fa-google text-warning me-2"></i></span> Google</button>
+                <button className="login-btn"><span><i class="fab fa-github text-warning me-2"></i></span> Git Hub</button>
             </div>
             <div className="text-center text-white mt-3"><p>or</p></div>
             <div>

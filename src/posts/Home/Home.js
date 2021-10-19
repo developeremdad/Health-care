@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import useData from '../../Hooks/useData';
-import Footer from '../Shared/Footer/Footer';
 // import Banner from './Banner/Banner';
 import './Home.css';
 import Services from './Services/Services';
@@ -32,7 +31,6 @@ const Home = () => {
                 </Container>
             </div>
             {/* <Services></Services> */}
-            <Footer></Footer>
         </div>
     );
 };

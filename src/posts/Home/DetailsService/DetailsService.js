@@ -8,10 +8,16 @@ const DetailsService = () => {
     const service = services.find(service => parseInt(service.key) === parseInt(Id))
 
     return (
-        <div>
-            <img src={service?.photoUrl} alt="" />
-            <h2>{service?.title}</h2>
-            <p>{service?.description}</p>
+        <div className="container row text-center mt-3 mx-auto">
+            <div className="col-lg-6 col-md-12 col-12 mx-auto border p-3">
+                <img className="img-fluid" src={service?.photoUrl} alt="" />
+                <h2 className="mt-2 text-success">{service?.title}</h2>
+                <hr className="border-2" />
+                <p>{service?.description}</p>
+                <div className="card-custom-footer text-center">
+                    <button>Get Appointment</button>
+                </div>
+            </div>
         </div>
     );
 };

@@ -8,6 +8,8 @@ import Header from './posts/Shared/Header/Header';
 import Login from './posts/Login/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './posts/Login/PrivateRoute/PrivateRoute';
+import AllServices from './posts/Home/AllServices/AllServices';
+import Footer from './posts/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
             <Home></Home>
           </Route>
 
+          <Route path="/services">
+            <AllServices></AllServices>
+          </Route>
+
           <PrivateRoute path="/details/:Id">
             <DetailsService></DetailsService>
           </PrivateRoute>
@@ -35,6 +41,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
 
     </AuthProvider>

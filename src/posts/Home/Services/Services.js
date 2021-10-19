@@ -9,7 +9,7 @@ const Services = (props) => {
         <Col>
             <Card className="shadow-sm border-0">
                 <Card.Img variant="top" src={photoUrl} />
-                <Card.Body>
+                <Card.Body className="card-body-custom">
                     <Card.Title className="card-title-custom">{title}</Card.Title>
                     <hr className="divider" />
                     <Card.Text className="card-description-custom">{description.slice(0, 130)} <span className="read-more-custom">read more</span></Card.Text>
