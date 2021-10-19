@@ -40,6 +40,9 @@ const useFirebase = () => {
             }).then((result) => {
                 setUser(result.user);
             })
+                .catch(error => {
+                    setError(error.message);
+                })
         }
         return createUserWithEmailAndPassword(auth, email, password);
 
@@ -68,7 +71,9 @@ const useFirebase = () => {
     return {
         signInWithGoogle,
         user,
+        setUser,
         error,
+        setError,
         logOut,
         handleSubmitForm,
         handleLoginForm

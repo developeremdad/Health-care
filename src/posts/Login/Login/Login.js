@@ -9,7 +9,8 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [isToggle, setIsToggle] = useState(false);
     // handle firebase auth 
-    const { signInWithGoogle, handleSubmitForm, handleLoginForm } = useAuth();
+    const { signInWithGoogle, handleSubmitForm, handleLoginForm, setUser, error, setError } = useAuth();
+    // console.log(error);
 
     const location = useLocation();
     const history = useHistory();
@@ -19,6 +20,10 @@ const Login = () => {
         signInWithGoogle()
             .then(result => {
                 history.push(redirect_url);
+                setUser(result.user);
+            })
+            .catch(error => {
+                setError(error.message);
             })
 
     }
@@ -27,6 +32,10 @@ const Login = () => {
         handleLoginForm(e)
             .then(result => {
                 history.push(redirect_url);
+                setUser(result.user);
+            })
+            .catch(error => {
+                setError(error.message);
             })
     }
 
@@ -57,7 +66,7 @@ const Login = () => {
     }
     return (
 
-        <div className="w-50 mx-auto border p-5 form-container mt-2">
+        <div className="mx-auto border p-5 form-container mt-2">
             <div className="text-center text-white">
                 <h4 className="mb-2">Log in with</h4>
                 <button onClick={handleButtonClick} className="login-btn">Google</button>
@@ -85,7 +94,7 @@ const Login = () => {
                     :
                     <button onClick={() => handleLogin({ email, password })} type="submit" className="btn submit-btn w-100">Log In</button>
                 }
-                {/* <p className="text-light text-center mt-3">Don't have an account?</p> */}
+                {/* {error && <p className="text-light text-center mt-3">Errror: {error}</p>} */}
             </div>
         </div>
 

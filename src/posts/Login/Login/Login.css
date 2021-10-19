@@ -2,6 +2,7 @@
     background-color: #ddd;
 } */
 .form-container{
+    width: 50%;
     background-color: #4a304d;
     border-radius: 10px;
 }
@@ -29,3 +30,9 @@
     font-weight: bold;
     letter-spacing: .2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .form-container{
+        width: 90%;
+    }
+  }
