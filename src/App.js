@@ -10,6 +10,7 @@ import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './posts/Login/PrivateRoute/PrivateRoute';
 import AllServices from './posts/Home/AllServices/AllServices';
 import Footer from './posts/Shared/Footer/Footer';
+import Appointment from './posts/Appointment/Appointment';
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
           <PrivateRoute path="/details/:Id">
             <DetailsService></DetailsService>
           </PrivateRoute>
+
+          <Route path="/appointment">
+            <Appointment></Appointment>
+          </Route>
 
           <Route path="/login">
             <Login></Login>

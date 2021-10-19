@@ -7,6 +7,12 @@ const AllServices = () => {
     const services = useData();
     return (
         <div>
+            <div style={{ background: '#ddd' }} className=" py-5 mb-3 text-center">
+                <h1 className="">Our Services</h1>
+                <p>Service that provides medical treatment and care to the public or to a particular group</p>
+
+            </div>
+            {/* display all services section  */}
             <Container>
                 <Row xs={1} md={3} sm={2} className="g-4">
                     {
