@@ -18,13 +18,6 @@ const Login = () => {
     // sign in with google 
     const handleButtonClick = () => {
         signInWithGoogle()
-            .then(result => {
-                history.push(redirect_url);
-                setUser(result.user);
-            })
-            .catch(error => {
-                setError(error.message);
-            })
 
     }
 
