@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color: #ddd;
-}
+} */
 .form-container{
     background-color: #4a304d;
     border-radius: 10px;
@@ -12,6 +12,9 @@ body{
     color: #ddd;
     padding: 5px 50px;
     border-radius: 20px;
+}
+.login-btn:hover{
+    background-color: #705075;
 }
 .input-field-custom{
     background-color: #3b263e;
