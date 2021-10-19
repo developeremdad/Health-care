@@ -24,7 +24,7 @@ const Header = () => {
                                 <Link className="nav-link" to="/appointment">Appointment</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="">Contact</Link>
+                                <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                             <li className="nav-item">
                                 {user.email ? <Link className="nav-link" onClick={logOut} to="/login"><b>Logout</b> : {user.displayName}</Link>

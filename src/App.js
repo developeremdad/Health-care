@@ -11,6 +11,7 @@ import PrivateRoute from './posts/Login/PrivateRoute/PrivateRoute';
 import AllServices from './posts/Home/AllServices/AllServices';
 import Footer from './posts/Shared/Footer/Footer';
 import Appointment from './posts/Appointment/Appointment';
+import Contact from './posts/Contact/Contact';
 
 function App() {
   return (
@@ -34,8 +35,12 @@ function App() {
             <DetailsService></DetailsService>
           </PrivateRoute>
 
-          <Route path="/appointment">
+          <privateRoute path="/appointment">
             <Appointment></Appointment>
+          </privateRoute>
+
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
 
           <Route path="/login">
