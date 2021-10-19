@@ -1,4 +1,7 @@
 import React from 'react';
+import banner1 from '../../../images/home-banner-1.jpg';
+import banner2 from '../../../images/home-banner-2.jpg';
+import banner3 from '../../../images/home-banner-3.jpg';
 
 const Banner = () => {
     return (
@@ -11,24 +14,26 @@ const Banner = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={``} className="d-block w-100 img-fluid" alt="..." />
+                        <img src={banner1} className="d-block w-100 img-fluid" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h1>Hair With Olive Oil</h1>
+                            <p>What is good for hair care?
+                                Image result for hair care description
+                                Pre-shampoo treatments like oiling and massaging improve blood circulation on the scalp, relax your muscles, boost shine and nourish the hair.  It also restores moisture content, enables hair growth and repairs split ends.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..." />
+                        <img src={banner2} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h1>Beauty on the Go</h1>
+                            <p>Not only does the skin hold everything in, it also plays a crucial role in providing an airtight, watertight and flexible barrier between the outside world and the highly regulated systems within the body.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..." />
+                        <img src={banner3} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h1>Apply skin care products right after bathing</h1>
+                            <p>Perhaps one of the most essential components of healthy skin is moisture. In addition to a quality skin care routine, the timing in which you apply your products can affect moisture retention. Waldorf's top tip: Take to your skin care routine immediately after hopping out of the shower.</p>
                         </div>
                     </div>
                 </div>

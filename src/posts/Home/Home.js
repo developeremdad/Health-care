@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import useData from '../../Hooks/useData';
+import Banner from './Banner/Banner';
 // import Banner from './Banner/Banner';
 import './Home.css';
 import Services from './Services/Services';
@@ -10,7 +11,7 @@ const Home = () => {
     // console.log(services);
     return (
         <div>
-            {/* <Banner></Banner> */}
+            <Banner></Banner>
 
             <div className="mb-5">
                 <div className="services-heading text-center">
