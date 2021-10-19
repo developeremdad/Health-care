@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "dept": "Implantologist",
+    "name": "Dr. Sarah Johnson",
+    "about": "Dr. Sarah Johnson is a renowned dental surgeon and a certified Dental Implantologist. He is the Director our hospitals.",
+    "img": "https://i.ibb.co/9ZVKSSP/5-1.png",
+    "degre": "BDS , MDS - Plastic And Cosmetic Surgeon",
+    "call": "(+760) 987-65-43210",
+    "mail": "supportyou@example.com"
+  },
+  {
+    "id": 2,
+    "dept": "Prosthodontist",
+    "name": "Dr. Greg House",
+    "about": "Dr. Greg House is a renowned dental surgeon and a certified Dental Implantologist. He is the Director our hospitals.",
+    "img": "https://i.ibb.co/VByr395/4-2.png",
+    "degre": "BDS , MDS - Plastic And Cosmetic Surgeon",
+    "call": "(+760) 987-65-43210",
+    "mail": "supportyou@example.com"
+  },
+  {
+    "id": 3,
+    "dept": "Prosthodontist",
+    "name": "Dr. Robert B. Moreau",
+    "about": "Dr. Robert B. Moreau is a renowned dental surgeon and a certified Dental Implantologist. He is the Director our hospitals.",
+    "img": "https://i.ibb.co/p28X1hR/3-2.png",
+    "degre": "BDS , MDS - Plastic And Cosmetic Surgeon",
+    "call": "(+760) 987-65-43210",
+    "mail": "supportyou@example.com"
+  },
+  {
+    "id": 4,
+    "dept": "Implantologist",
+    "name": "Dr. Daryl Cornelius",
+    "about": "Dr. Evelynne Mirando is a renowned dental surgeon and a certified Dental Implantologist. He is the Director our hospitals.",
+    "img": "https://i.ibb.co/41ZYQTM/2-2.png",
+    "degre": "BDS , MDS - Plastic And Cosmetic Surgeon",
+    "call": "(+760) 987-65-43210",
+    "mail": "supportyou@example.com"
+  }
+]

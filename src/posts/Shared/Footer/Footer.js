@@ -29,7 +29,7 @@ const Footer = () => {
                         <hr className="divider" />
 
                         <p><Link className="footer-nav text-black" to="/home">Home</Link></p>
-                        <p><Link className="footer-nav text-black" to="/about">About</Link></p>
+                        <p><Link className="footer-nav text-black" to="/appointment">Appointment</Link></p>
                         <p><Link className="footer-nav text-black" to="/services">Services</Link></p>
                         <p><Link className="footer-nav text-black" to="/contact">Contact</Link></p>
 
