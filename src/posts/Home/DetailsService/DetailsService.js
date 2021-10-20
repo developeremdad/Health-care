@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import useData from '../../../Hooks/useData';
 
 const DetailsService = () => {
@@ -15,7 +16,7 @@ const DetailsService = () => {
                 <hr className="border-2" />
                 <p>{service?.description}</p>
                 <div className="card-custom-footer text-center">
-                    <button>Get Appointment</button>
+                    <Link to="/appointment"><button>Get Appointment</button></Link>
                 </div>
             </div>
         </div>
