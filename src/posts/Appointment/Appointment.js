@@ -13,7 +13,7 @@ const Appointment = () => {
 
     return (
         <div>
-            <img src={banner} alt="" />
+            <div><img className="img-fluid" src={banner} alt="appointment cover" /></div>
             <h1 className="text-center bg-black py-3 text-light">Appointment Now</h1>
             <div className="row w-100">
                 <div className="col-lg-4 col-md-6 col-12 p-4">

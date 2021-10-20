@@ -1,3 +1,39 @@
+.find-doctor{
+    background-color: #435ba1;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.find-doctor:hover{
+    background-color: #2f4790;
+}
+.hospital-services{
+    background-color: #4c68c4;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.hospital-services:hover{
+    background-color: #3f5cb9;
+}
+
+.sergery-services{
+    background-color: #43d5cb;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.sergery-services:hover{
+    background-color: #36b3aa;
+}
+
+.service-icon{
+    font-size: 60px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* services part style  */
 .services-heading{
     margin: 60px 0;
 }
@@ -11,4 +47,22 @@
     font-size: 3.5rem;
     margin-top: 20px;
     font-weight: 400;
+}
+
+/* about us section style  */
+.about-us-home p{
+    color: rgb(121, 120, 120);
+}
+.about-us-home-title{
+    letter-spacing: .2rem;
+    color: tomato;
+}
+
+.contact-icon{
+    background-color: #2f4790;
+    border-radius: 50%;
+    padding: 7px;
+    color: #ddd;
+    margin-right: 10px;
+    font-size: 10px;
 }

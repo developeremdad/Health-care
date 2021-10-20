@@ -6,7 +6,7 @@ import Services from '../Services/Services';
 const AllServices = () => {
     const services = useData();
     return (
-        <div>
+        <div className="pb-5">
             <div style={{ background: '#ddd' }} className=" py-5 mb-3 text-center">
                 <h1 className="">Our Services</h1>
                 <p>Service that provides medical treatment and care to the public or to a particular group</p>

@@ -16,11 +16,13 @@ easily access our website from any device.
 
 ✔ Some pages are private, but you can log them in.
 
-✔ You can take the service online with the doctor
+✔ You can take the service online with the doctor.
 
 ✔ You must login before you can avail our services. Otherwise you will not be able to take the service from now on.
 
 ✔ You can meet us directly by looking at the location.
+
+✔ When you reload page.then all page working successfully.
 
 ### Using languages 
 - Html 

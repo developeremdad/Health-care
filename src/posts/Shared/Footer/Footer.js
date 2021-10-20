@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div>
-            <div className="footer-container mt-4">
+            <div className="footer-container">
                 <div className="row w-100 mx-auto p-3">
                     <div className="col-lg-4 col-md-6 col-12">
                         <h5>ABOUT US</h5>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-6 col-12">
                         <h5>ADDRESS</h5>
                         <hr className="divider" />
-                        <p><span><i className="fas fa-map-marker-alt me-2"></i></span> Banani, Dhaka, Bangladesh</p>
+                        <p><span><i className="fas fa-map-marker-alt me-2"></i></span> Jatrabari, Dhaka, Bangladesh</p>
                         <p><span><i className="fas fa-phone-alt me-2"></i></span> +8801625360571</p>
                         <p><span><i className="fas fa-envelope me-2"></i></span> developeremdad@gmail.com</p>
                     </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="text-center bg-black text-light p-3 m-0">&copy; All Right Reserved By || Developer Emdad</p>
+            <p className="text-center bg-black text-light p-3 m-0">&copy;  Copyright 2021 || Developer Emdad</p>
         </div>
     );
 };
