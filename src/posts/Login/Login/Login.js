@@ -8,19 +8,25 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isToggle, setIsToggle] = useState(false);
-    // handle firebase auth 
-    const { signInWithGoogle, handleSubmitForm, handleLoginForm, setUser, setError } = useAuth();
-    // console.log(error);
 
+    // handle firebase auth 
+    const { signInWithGoogle, handleSubmitForm, handleLoginForm, setUser, setError, handleUpdateProfile, setIsLoading } = useAuth();
+
+    // redirect option 
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || '/';
     // sign in with google 
     const handleButtonClick = () => {
         signInWithGoogle()
+            .then(result => {
+                setUser(result.user);
+                history.push(redirect_url);
+            })
+            .finally(() => setIsLoading(false));
 
     }
-
+    // handle login user 
     const handleLogin = e => {
         handleLoginForm(e)
             .then(result => {
@@ -51,9 +57,12 @@ const Login = () => {
         setIsToggle(e.target.checked);
     }
 
-    const handleSubmitButton = (e) => {
-        handleSubmitForm(e)
+    // handle register submit form 
+    const handleSubmitButton = (userInfo) => {
+        handleSubmitForm(userInfo)
             .then(result => {
+                handleUpdateProfile(name);
+                setUser(result.user);
                 history.push(redirect_url);
             })
     }
@@ -62,8 +71,8 @@ const Login = () => {
         <div className="mx-auto border p-5 form-container mt-3">
             <div className="text-center text-white">
                 <h4 className="mb-2">Log in with</h4>
-                <button onClick={handleButtonClick} className="login-btn"><span><i class="fab fa-google text-warning me-2"></i></span> Google</button>
-                <button className="login-btn"><span><i class="fab fa-github text-warning me-2"></i></span> Git Hub</button>
+                <button onClick={handleButtonClick} className="login-btn"><span><i className="fab fa-google text-warning me-2"></i></span> Google</button>
+                <button className="login-btn"><span><i className="fab fa-github text-warning me-2"></i></span> Git Hub</button>
             </div>
             <div className="text-center text-white mt-3"><p>or</p></div>
             <div>

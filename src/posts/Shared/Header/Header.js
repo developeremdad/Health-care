@@ -27,7 +27,9 @@ const Header = () => {
                                 <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                             <li className="nav-item">
-                                {user.email ? <Link className="nav-link" onClick={logOut} to="/login"><b>Logout</b> : {user.displayName}</Link>
+                                {user.email
+                                    ?
+                                    <span><Link className="nav-link d-inline-block" onClick={logOut} to="/home"><b>Logout: </b></Link>{user.displayName ? user.displayName : user.email.substring(0, user.email.lastIndexOf("@"))}</span>
                                     :
                                     <Link className="nav-link" to="/login">Register</Link>}
                             </li>

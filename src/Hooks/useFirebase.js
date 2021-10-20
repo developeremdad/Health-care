@@ -14,12 +14,7 @@ const useFirebase = () => {
     // sign in with google button click 
     const signInWithGoogle = () => {
         setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
-            .finally(() => setIsLoading(false));
-
+        return signInWithPopup(auth, googleProvider)
     };
 
 
@@ -35,32 +30,30 @@ const useFirebase = () => {
     // sign in using email and password 
     const handleSubmitForm = e => {
         // e.preventDefault();
-        const { name, email, password } = e;
-
-        const findUser = auth.currentUser;
-        if (findUser) {
-            console.log(findUser);
-            updateProfile(auth.currentUser, {
-                displayName: name
-            }).then((result) => {
-                setUser(result.user);
-            })
-                .catch(error => {
-                    setError(error.message);
-                })
-        }
+        const { email, password } = e;
         return createUserWithEmailAndPassword(auth, email, password);
 
     }
 
-    // log in using email and password
-    const handleLoginForm = e => {
-
-        const { email, password } = e;
-        return signInWithEmailAndPassword(auth, email, password)
+    // update user profile name 
+    const handleUpdateProfile = (name) => {
+        updateProfile(auth.currentUser, {
+            displayName: name
+        }).then((result) => {
+            setUser(result.user);
+        })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
+    // log in using email and password
+    const handleLoginForm = e => {
+        const { email, password } = e;
+        return signInWithEmailAndPassword(auth, email, password);
+    }
 
+    // always keep user update profile
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -79,11 +72,13 @@ const useFirebase = () => {
         user,
         setUser,
         isLoading,
+        setIsLoading,
         error,
         setError,
         logOut,
         handleSubmitForm,
-        handleLoginForm
+        handleLoginForm,
+        handleUpdateProfile
     }
 
 };

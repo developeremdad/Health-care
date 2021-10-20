@@ -5,7 +5,6 @@ import banner from '../../images/appoint-bg.jpg';
 
 const Appointment = () => {
     const [doctors, setDoctors] = useState([]);
-    console.log(doctors);
     useEffect(() => {
         fetch('/dortorFakeData.json')
             .then(res => res.json())
