@@ -68,7 +68,7 @@ const Login = () => {
     }
     return (
 
-        <div className="mx-auto border p-5 form-container mt-3">
+        <div className="mx-auto border p-5 form-container my-4">
             <div className="text-center text-white">
                 <h4 className="mb-2">Log in with</h4>
                 <button onClick={handleButtonClick} className="login-btn"><span><i className="fab fa-google text-warning me-2"></i></span> Google</button>
